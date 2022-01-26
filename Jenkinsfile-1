@@ -1,5 +1,4 @@
-pipeline {
-  stages {
+node {
     stage('Scan') {
       steps {
         withSonarQubeEnv(installationName: 'sq1') { 
@@ -7,5 +6,5 @@ pipeline {
         }
       }
     }
-  }
+  
 }
